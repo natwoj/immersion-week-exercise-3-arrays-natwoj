@@ -1,6 +1,14 @@
-module.exports = function concatArray() {
-  // TODO Implement me.
-};
+module.exports = function concatArray(arr) {
+    if (arr.length > 0) {
+    for (let i = 0; i < arr.length; i++) {
+      let concatStr = arr.join(" ") + ".";
+      return (concatStr);
+      } 
+    }
+      else {
+        return (".")
+      }
+    } 
 
 /* Weryfikacja */
 
