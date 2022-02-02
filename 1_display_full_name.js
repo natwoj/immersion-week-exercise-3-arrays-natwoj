@@ -14,7 +14,7 @@ module.exports =  function displayFullName(string) {
   displayFullName("James Bond");
   displayFullName("Salvador Felipe Jacinto Dalí");
 
- /* Weryfikacja 
+ /* Weryfikacja */
 
 function verify(input, goal) {
   if (input === goal) {
@@ -27,5 +27,3 @@ function verify(input, goal) {
 verify(displayFullName("James Bond"), "My name is Bond, James Bond");
 verify(displayFullName("Ada Lovelace"), "My name is Lovelace, Ada Lovelace");
 verify(displayFullName("Salvador Felipe Jacinto Dalí"), "My name is Dalí, Salvador Felipe Jacinto Dalí");
-
-*/
