@@ -11,7 +11,6 @@ module.exports = function concatArray(arr) {
     } 
 
 /* Weryfikacja */
-
 function verify(input, goal) {
   if (input === goal) {
     console.log('Gratulacje!');
