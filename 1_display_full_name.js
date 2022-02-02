@@ -1,5 +1,4 @@
 
-  
 module.exports =  function displayFullName(string) {
   let stringToArray = string.split(" ");
   let lastElementinArray = stringToArray[stringToArray.length-1];
