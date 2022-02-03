@@ -12,6 +12,7 @@ function displayFullName(string) {
   displayFullName("James Bond");
   displayFullName("Salvador Felipe Jacinto Dalí");
   
+  
   function verify(input, goal) {
     if (input === goal) {
       console.log('Gratulacje!');
