@@ -2,7 +2,6 @@
 function displayFullName(string) {
   let stringToArray = string.split(" ");
   let lastElementinArray = stringToArray[stringToArray.length-1];
-  
   if (stringToArray.length <= 2) {
   return ("My name is " + lastElementinArray + ", " + stringToArray[0] + " " + lastElementinArray);
   }
