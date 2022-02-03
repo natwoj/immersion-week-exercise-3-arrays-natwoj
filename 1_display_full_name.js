@@ -20,7 +20,6 @@ function displayFullName(string) {
       console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
     }
   }
-  
   verify(displayFullName("James Bond"), "My name is Bond, James Bond");
   verify(displayFullName("Ada Lovelace"), "My name is Lovelace, Ada Lovelace");
   verify(displayFullName("Salvador Felipe Jacinto Dalí"), "My name is Dalí, Salvador Felipe Jacinto Dalí");
