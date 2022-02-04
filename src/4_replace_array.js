@@ -1,6 +1,13 @@
-module.exports = function replaceArray() {
-  // TODO Implement me.
-};
+module.exports = function replaceArray(arr) {
+  let outputArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][0].includes ("h") || arr[i][0].includes ("H")) {
+     arr[i] = arr[i].toUpperCase();
+     outputArr = arr;
+    }
+    return (outputArr);
+  } 
+}
 
 /**Weryfikacja */
 
