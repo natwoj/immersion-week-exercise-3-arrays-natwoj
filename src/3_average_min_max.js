@@ -1,6 +1,14 @@
-module.exports = function averageMinMax() {
-  // TODO Implement me.
-};
+module.exports = 
+  function averageMinMax(values) {
+  let maxNum = Math.max(...values);
+  let minNum = Math.min(...values);
+  let average = 0;
+    
+   for (let i=0; i<values.length; i++) {
+     average += values[i]/values.length;
+      }
+return ("Min: " + minNum + " Max: " + maxNum + " Average: " + Math.floor(average));
+  }
 
 /**Weryfikacja */
 function verify(input, goal) {
