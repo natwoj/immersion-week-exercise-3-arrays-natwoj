@@ -1,6 +1,11 @@
-module.exports = function removeDouble() {
-  // TODO Implement me.
-};
+module.exports = function removeDouble (inputArr) {
+  let singleWordsArr = [...new Set(inputArr)];
+  
+  return (singleWordsArr);
+  
+  }
+  removeDouble(["suit", "clock", "butter", "suit"]);
+  // [ 'clock', 'butter', 'suit' ] 
 
 /**Weryfikacja */
 
