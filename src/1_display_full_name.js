@@ -1,7 +1,14 @@
-module.exports = function displayFullName() {
-  // TODO Implement me.
-};
-
+/*module.exports = */ 
+function displayFullName(string) {
+  let stringToArray = string.split(" ");
+  let lastElementinArray = stringToArray[stringToArray.length-1];
+  if (stringToArray.length <= 2) {
+  return ("My name is " + lastElementinArray + ", " + stringToArray[0] + " " + lastElementinArray);
+  }
+  else {
+    return ("My name is " + lastElementinArray + ", " + string);
+  }
+  }
 /* Weryfikacja */
 
 function verify(input, goal) {
@@ -11,7 +18,6 @@ function verify(input, goal) {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
   }
 }
-
-verify(displayName("James Bond"), "My name is Bond, James Bond");
-verify(displayName("Ada Lovelace"), "My name is Lovelace, Ada Lovelace");
-verify(displayName("Salvador Felipe Jacinto Dalí"), "My name is Dalí, Salvador Felipe Jacinto Dalí");
+verify(displayFullName("James Bond"), "My name is Bond, James Bond");
+verify(displayFullName("Ada Lovelace"), "My name is Lovelace, Ada Lovelace");
+verify(displayFullName("Salvador Felipe Jacinto Dalí"), "My name is Dalí, Salvador Felipe Jacinto Dalí");
