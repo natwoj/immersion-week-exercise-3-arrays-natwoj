@@ -8,8 +8,8 @@ function removeDouble (inputArr) {
           justSingleWords.push(elem);
         justSingleWords.sort();
       }
-    console.log(justSingleWords);
   });
+  return justSingleWords;
   }
 
 /**Weryfikacja */
