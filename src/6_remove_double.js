@@ -1,11 +1,16 @@
-module.exports = function removeDouble (inputArr) {
-  let singleWordsArr = [...new Set(inputArr)];
-  
-  return (singleWordsArr);
-  
+/*module.exports = */
+function removeDouble (inputArr) {
+
+  let justSingleWords = [];
+    
+  inputArr.forEach((elem) => {
+      if (!justSingleWords.includes(elem)) {
+          justSingleWords.push(elem);
+        justSingleWords.sort();
+      }
+    console.log(justSingleWords);
+  });
   }
-  removeDouble(["suit", "clock", "butter", "suit"]);
-  // [ 'clock', 'butter', 'suit' ] 
 
 /**Weryfikacja */
 
