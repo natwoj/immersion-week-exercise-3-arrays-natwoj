@@ -1,4 +1,5 @@
-module.exports = 
+module.exports = averageMinMax;
+
   function averageMinMax(values) {
   let maxNum = Math.max(...values);
   let minNum = Math.min(...values);
