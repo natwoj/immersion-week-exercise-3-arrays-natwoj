@@ -1,18 +1,21 @@
-module.exports = function replaceArray(arr) {
+module.exports = replaceArray;
+
+
+function replaceArray(arr) {
   let outputArr = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i][0].includes ("h") || arr[i][0].includes ("H")) {
      arr[i] = arr[i].toUpperCase();
      outputArr = arr;
     }
-    return (outputArr);
   } 
+  return outputArr;
 }
 
 /**Weryfikacja */
 
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);

@@ -1,4 +1,5 @@
-/*module.exports = */
+module.exports = matrixGen;
+
   function matrixGen(rows, columns) {
     //row = i 
     // columns = j
@@ -12,13 +13,13 @@
                 outputArr[i].push((i+1)*(j+1));
             }
     }
-        return outputArr.toString();
+        return outputArr;
     };
 
 /**Weryfikacja */
 
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);

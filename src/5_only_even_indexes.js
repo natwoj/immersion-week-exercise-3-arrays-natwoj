@@ -1,6 +1,7 @@
-module.exports = function evenIndexes (word) {
+module.exports = evenIndexes;
+
+function evenIndexes (word) {
   let arr = [ ];
-  
   for (let i = 0; i < word.length; i+=2) {
    arr.push(word[i]);
     }
@@ -10,7 +11,7 @@ module.exports = function evenIndexes (word) {
 /**Weryfikacja */
 
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
