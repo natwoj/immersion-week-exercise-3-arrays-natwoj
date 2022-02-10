@@ -1,21 +1,14 @@
-/*module.exports = */
-function removeDouble (inputArr) {
+module.exports = removeDouble;
 
-  let justSingleWords = [];
-    
-  inputArr.forEach((elem) => {
-      if (!justSingleWords.includes(elem)) {
-          justSingleWords.push(elem);
-        justSingleWords.sort();
-      }
-  });
-  return justSingleWords;
+function removeDouble(inputArr) {
+  let outputFinal = [...new Set(inputArr.reverse())];
+  return outputFinal.reverse();
   }
 
 /**Weryfikacja */
 
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString === goal.toString) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
